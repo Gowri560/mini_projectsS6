@@ -1,0 +1,140 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #2C2C2C; /* Solid grey background 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url('image1.jpg') no-repeat center center fixed; /* Set the uploaded image as background */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 230px;
+    /* padding-bottom: 300px; */
+}
+
+.content {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+    /* margin-bottom: 100px; */
+    
+}
+
+h1 {
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white; /* White for the header */
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: lightgrey; /* Light grey text for the description */
+}
+
+/* Main container for sections side by side */
+.main-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;  /* Space between the sections */
+    margin-top: 40px;
+}
+
+.section {
+    width: 30%;  /* Each section takes up 30% of the space */
+    padding: 20px;
+    background: rgba(25, 25, 25, 0.7); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.start-button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    background-color: #333333; /* Dark grey background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+}
+
+.start-button:hover {
+    background-color: #555555; /* Slightly lighter grey on hover */
+    transform: scale(1.05);
+}
+
+.start-button:active {
+    background-color: #777777; /* Darker grey when clicked */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .main-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 90%; /* Each section will take up 90% of the width on small screens */
+        margin-bottom: 20px; /* Space between sections */
+    }
+}
